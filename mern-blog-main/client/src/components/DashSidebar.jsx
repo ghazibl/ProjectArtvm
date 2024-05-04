@@ -7,11 +7,14 @@ import {
   HiAnnotation,
   HiChartPie,
 } from 'react-icons/hi';
+import { IoIosAddCircle } from "react-icons/io";
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { signoutSuccess } from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
+import { FaRegCalendarAlt } from "react-icons/fa";
+
 
 export default function DashSidebar() {
   const location = useLocation();
@@ -67,6 +70,17 @@ export default function DashSidebar() {
             </Sidebar.Item>
           </Link>
           {currentUser.isAdmin && (
+            <Link to='/dashboard?tab=Calendrier'>
+              <Sidebar.Item
+                active={tab === 'Calendrier'}
+                icon={FaRegCalendarAlt  }
+                as='div'
+              >
+                Calendrier
+              </Sidebar.Item>
+            </Link>
+          )}
+          {currentUser.isAdmin && (
             <Link to='/dashboard?tab=posts'>
               <Sidebar.Item
                 active={tab === 'posts'}
@@ -74,6 +88,50 @@ export default function DashSidebar() {
                 as='div'
               >
                 Posts
+              </Sidebar.Item>
+            </Link>
+          )}
+              {currentUser.isAdmin && (
+            <Link to='/dashboard?tab=addproduct'>
+              <Sidebar.Item
+                active={tab === 'addproduct'}
+                icon={IoIosAddCircle}
+                as='div'
+              >
+                Ajouter Produit
+              </Sidebar.Item>
+            </Link>
+          )}
+          {currentUser.isAdmin && (
+            <Link to='/dashboard?tab=ListProduct'>
+              <Sidebar.Item
+                active={tab === 'ListProduct'}
+                icon={HiDocumentText}
+                as='div'
+              >
+                Liste Produits
+              </Sidebar.Item>
+            </Link>
+          )}
+           {currentUser.isAdmin && (
+            <Link to='/dashboard?tab=addfacture'>
+              <Sidebar.Item
+                active={tab === 'addfacture'}
+                icon={IoIosAddCircle}
+                as='div'
+              >
+                Ajouter Facture
+              </Sidebar.Item>
+            </Link>
+          )}
+          {currentUser.isAdmin && (
+            <Link to='/dashboard?tab=Listfacture'>
+              <Sidebar.Item
+                active={tab === 'Listfacture'}
+                icon={HiDocumentText}
+                as='div'
+              >
+                Liste Factures
               </Sidebar.Item>
             </Link>
           )}

@@ -4,29 +4,28 @@ export default function About() {
       <div className='max-w-2xl mx-auto p-3 text-center'>
         <div>
           <h1 className='text-3xl font font-semibold text-center my-7'>
-            About Sahand' Blog
+          À propos de Nous
           </h1>
           <div className='text-md text-gray-500 flex flex-col gap-6'>
             <p>
-              Welcome to Sahand's Blog! This blog was created by Sahand Ghavidel
-              as a personal project to share his thoughts and ideas with the
-              world. Sahand is a passionate developer who loves to write about
-              technology, coding, and everything in between.
+            Fondée en 1999 à Mahdia, ARTVM s'est imposée comme un
+            leader incontesté dans le domaine de la transformation du 
+            verre plat et de la fabrication de miroirs sur mesure en Tunisie.
+            leur services spécialisés, comprenant la découpe précise et le façonnage sur mesure du verre, 
+            la pose professionnelle garantissant une installation impeccable,
+            la fabrication personnalisée de miroirs répondant à des besoins spécifiques,
+            ainsi que la conception et l'installation de vitrines de magasin élégantes et fonctionnelles.
             </p>
 
             <p>
-              On this blog, you'll find weekly articles and tutorials on topics
-              such as web development, software engineering, and programming
-              languages. Sahand is always learning and exploring new
-              technologies, so be sure to check back often for new content!
+            les gamme de produits variée, comprenant des miroirs biseautés pour une touche d'élégance supplémentaire,
+            des vitres double vitrage pour une isolation thermique et phonique optimale, 
+            des vitres de sécurité pour assurer la protection des espaces,
+            des vitres fumées pour contrôler la luminosité et la chaleur, 
+            ainsi que des vitres anti-effraction pour renforcer la sécurité de vos locaux commerciaux ou résidentiels.
             </p>
 
-            <p>
-              We encourage you to leave comments on our posts and engage with
-              other readers. You can like other people's comments and reply to
-              them as well. We believe that a community of learners can help
-              each other grow and improve.
-            </p>
+           
           </div>
         </div>
       </div>

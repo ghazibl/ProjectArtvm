@@ -19,42 +19,43 @@ export default function FooterCom() {
           </div>
           <div className='grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6'>
             <div>
-              <Footer.Title title='About' />
+              <Footer.Title title=' À propos de Nous' />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href='https://www.100jsprojects.com'
+                  href=''
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  100 JS Projects
+                  Qui sommes-nous ?
                 </Footer.Link>
                 <Footer.Link
                   href='/about'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Sahand's Blog
+                  Conditions générales de vente
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title='Follow us' />
+              <Footer.Title title='NOS CONTACTS' />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href='https://www.github.com/sahandghavidel'
+                  href=''
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Github
+                  28817593
                 </Footer.Link>
-                <Footer.Link href='#'>Discord</Footer.Link>
+                <Footer.Link href='#'>artvm2021@verre-et-deco.fr</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title='Legal' />
+              <Footer.Title title='INFORMATION' />
               <Footer.LinkGroup col>
-                <Footer.Link href='#'>Privacy Policy</Footer.Link>
-                <Footer.Link href='#'>Terms &amp; Conditions</Footer.Link>
+                <Footer.Link href='#'>Rue de la Republique, Mahdia 5100</Footer.Link>
+                <Footer.Link href='#'>Du lundi au Vendredi : 8h - 12h et 13h30 - 18h
+Samedi : 8h - 12h</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>
